@@ -1,17 +1,18 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
-  </div>
+  <v-container
+    fluid
+    class="fill-height primary no-gutters pa-0 d-flex flex-column"
+  >
+  </v-container>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import Navigation from "@/components/Navigation.vue";
 
 @Component({
   components: {
-    HelloWorld
+    Navigation
   }
 })
 export default class Home extends Vue {}
